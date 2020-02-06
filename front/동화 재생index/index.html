@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+		<meta charset="utf-8">
+        <title>동화읽기</title>
+        <meta name="description" content="동화읽기" />
+        <meta name="keywords" content="jquery, html5, audio, css3, template, band, music, player, album, discography, website"/>
+		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
+        <link rel="stylesheet" href="css/style.css" type="text/css"  />
+		<link rel="stylesheet" href="css/jplayer.codrops.css" type="text/css" />
+		<link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+		<link href='http://fonts.googleapis.com/css?family=Terminal+Dosis+Light' rel='stylesheet' type='text/css' />
+	</head>
+	
+    <body lang="kor">
+		<div class="cd_wrapper">
+			<div id="cd_background" class="cd_background">
+				<div class="cd_overlay"></div>
+				<div class="cd_loading"></div>
+			</div>
+			<h1 class="cd_title">player</h1><span>Fairy tail read</span></h1>
+			
+			<div id="jquery_jplayer" class="jp-jplayer"></div>
+			<div id="jp-audio" class="jp-audio">
+				<div class="jp-type-playlist">
+					<div id="jp_interface" class="jp-interface">
+									<ul class="jp-controls">
+							<li><a href="#" class="jp-play" tabindex="1">play</a></li>
+							<li><a href="#" class="jp-pause" tabindex="1">pause</a></li>
+							<li><a href="#" class="jp-stop" tabindex="1">stop</a></li>
+							<li><a href="#" class="jp-mute" tabindex="1">mute</a></li>
+							<li><a href="#" class="jp-unmute" tabindex="1">unmute</a></li>
+							<li><a href="#" class="jp-previous" tabindex="1">previous</a></li>
+							<li><a href="#" class="jp-next" tabindex="1">next</a></li>
+									</ul>
+									<div class="jp-progress">
+							<div class="jp-seek-bar">
+								<div class="jp-play-bar"></div>
+										</div>
+									</div>
+						<div class="jp-volume-bar">
+							<div class="jp-volume-bar-value"></div>
+									</div>
+						<div class="jp-current-time"></div>
+						<div class="jp-duration"></div>
+								</div>
+					<div id="jp_playlist" class="jp-playlist">
+									<ul>
+							<!-- The method Playlist.displayPlaylist() uses this unordered list -->
+							<li></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+			<div id="cd_container" class="cd_container">
+				<div class="cd_album cd_album_1" data-bgimg="images/1.jpg">
+					<h1>Fairy Tail. 1</h1>
+					<a href="#" class="cd_back">&laquo; Go back</a>
+					<div class="cd_content">
+						<div class="cd_playlist">
+							<ul>
+								<li data-mp3="songs/ramblinglibrarian_-_Our_Resolve.mp3" data-oga="songs/ramblinglibrarian_-_Our_Resolve.ogg">동화 재생</li>
+							</ul>
+						</div>
+						<div class="cd_content_inner">
+							<p>동화 내용 나올곳</p>
+						</div>
+					</div>
+				</div>
+				<div class="cd_album cd_album_2" data-bgimg="images/2.jpg">
+					<h1>Fairy Tail. 2</h1>
+					<a href="#" class="cd_back">&laquo; Go back</a>
+					<div class="cd_content">
+						<div class="cd_playlist">
+							<ul>
+								<li data-mp3="songs/ramblinglibrarian_-_Our_Resolve.mp3" data-oga="songs/ramblinglibrarian_-_Our_Resolve.ogg">동화 재생</li>
+							</ul>
+						</div>
+						<div class="cd_content_inner">
+							<p>동화 내용 나올곳</p>
+						</div>
+					</div>
+				</div>
+				<div class="cd_album cd_album_3" data-bgimg="images/3.jpg">
+					<h1>Fairy Tail. 3</h1>
+					<a href="#" class="cd_back">&laquo; Go back</a>
+					<div class="cd_content">
+						<div class="cd_playlist">
+							<ul>
+								<li data-mp3="songs/ramblinglibrarian_-_Our_Resolve.mp3" data-oga="songs/ramblinglibrarian_-_Our_Resolve.ogg">동화 재생</li>
+							</ul>
+						</div>
+						<div class="cd_content_inner">
+							<p>동화 내용 나올곳</p>
+						</div>
+					</div>
+				</div>
+				<div class="cd_album cd_album_4" data-bgimg="images/4.jpg">
+					<h1>Fairy Tail. 4</h1>
+					<a href="#" class="cd_back">&laquo; Go back</a>
+					<div class="cd_content">
+						<div class="cd_playlist">
+							<ul>
+								<li data-mp3="songs/ramblinglibrarian_-_Our_Resolve.mp3" data-oga="songs/ramblinglibrarian_-_Our_Resolve.ogg">동화 재생</li>
+							</ul>
+						</div>
+						<div class="cd_content_inner">
+							<p>동화 내용 나올곳</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="cd_navigation" class="cd_navigation">
+				<a href="#" class="cd_prev">Previous</a>
+				<a href="#" class="cd_next">Next</a>
+			</div>
+			<div class="cd_footer">
+				<a class="cd_left" href="http://tympanus.net/Tutorials/MovingBoxesContent/"><span>&laquo; Previous Demo:</span> Moving Boxes Content with jQuery</a>
+				<a href="http://www.flickr.com/photos/notsogoodphotography/" target="_blank">Photos by Ibrahim Iujaz</a>
+				<a href="http://tympanus.net/codrops/2011/04/11/circular-discography-template/">back to the Codrops tutorial</a>
+			</div>
+		</div>
+		<!-- jQuery -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+		<!-- the mousewheel plugin - optional to provide mousewheel support -->
+		<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+		<!-- the jScrollPane script -->
+		<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+		<!-- the transform plugin -->
+		<script type="text/javascript" src="js/jquery.transform-0.9.3.min_.js"></script>
+		<!-- the jPlayer plugin -->
+		<script type="text/javascript" src="js/jPlayer/jquery.jplayer.min.js"></script>
+		<!-- the playlist script (jPlayer demo code with some few changes) -->
+		<script type="text/javascript" src="js/playlist.js"></script>
+		<!-- the main script -->
+		<script type="text/javascript" src="js/jquery.template.js"></script>
+    </body>
+</html>
