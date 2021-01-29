@@ -1,9 +1,11 @@
 #!python3
+#MH
 import xml.etree.ElementTree as ET
-img_width=1920
-img_height=1080
-root_path = /home/superbin/??????????
-value = "have your class list "
+img_width=1920 # your image image.size[1]
+img_height=1080 # your image image.size[0]
+root_path = /home/superbin/?????????? # Annotation Folder
+value = "have your class list " # class value
+# std Coordinate value (math_norm)
 def math_norm(xmin,xmax,ymin,ymax):
 	width = xmax-xmin
 	height = ymax - ymin
